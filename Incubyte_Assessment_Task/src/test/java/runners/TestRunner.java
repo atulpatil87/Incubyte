@@ -1,5 +1,7 @@
 package test.java.runners;
 
+import org.junit.runner.RunWith;
+
 import io.cucumber.testng.CucumberOptions;
 
 @RunWith(Cucumber.class)

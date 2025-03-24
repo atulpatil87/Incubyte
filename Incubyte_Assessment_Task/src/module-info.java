@@ -5,4 +5,5 @@ module Incubyte_Assessment_Task {
 	requires io.cucumber.java;
 	requires io.cucumber.core;
 	requires junit;
+	requires io.cucumber.testng;
 }
