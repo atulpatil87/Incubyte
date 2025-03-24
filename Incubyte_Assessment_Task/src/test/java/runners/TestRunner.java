@@ -1,21 +1,15 @@
-package test.java.runners;
+package runner;
 
 import org.junit.runner.RunWith;
-
-import io.cucumber.testng.CucumberOptions;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    features = "src/test/resources/features", // Path to feature files
-    glue = "stepDefinitions", // Package where step definitions are located
-    plugin = {
-        "pretty", 
-        "html:target/cucumber-reports.html", // Generates HTML report
-        "json:target/cucumber.json", // Generates JSON report
-        "junit:target/cucumber.xml" // Generates JUnit XML report
-    },
-    monochrome = true, // Improves console output readability
-    dryRun = false // Set to true to check if step definitions are missing
+    features = "src/test/resources/features",
+    glue = "stepDefinitions",
+    plugin = { "pretty", "html:target/cucumber-reports.html" },
+    monochrome = true
 )
-public class TestRunner {
+public class CucumberTestRunner {
 }
