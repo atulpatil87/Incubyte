@@ -10,6 +10,43 @@
     <artifactId>selenium-java</artifactId>
     <version>4.29.0</version>
 </dependency>
+
+<!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+<dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>5.9.2</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.1.2</version>
+</dependency>
+
+<!-- Junit and Cucumber -->
+ <dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>3.8.1</version>
+    <scope>test</scope>
+ </dependency>
+    
+    <dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-java</artifactId>
+    <version>7.21.0</version>
+    </dependency>
+    
+        <!-- Cucumber Reports -->
+    <dependency>
+        <groupId>net.masterthought</groupId>
+        <artifactId>cucumber-reporting</artifactId>
+        <version>5.7.0</version>
+    </dependency>
+    
+
   </dependencies>
   <build>
     <sourceDirectory>src</sourceDirectory>
